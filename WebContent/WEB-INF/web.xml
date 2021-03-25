@@ -8,12 +8,22 @@
 
 	<servlet>
 		<servlet-name>ControllerServlet</servlet-name>
-		<servlet-class>net.codejava.javaee.bookstore.ControllerServlet</servlet-class>
+		<servlet-class>bookstore.ControllerServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>ControllerServlet</servlet-name>
 		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>prop</servlet-name>
+		<servlet-class>bookstore.PropertyLoaderServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>prop</servlet-name>
+		<url-pattern>/prop</url-pattern>
 	</servlet-mapping>
 
 	<error-page>
@@ -34,6 +44,13 @@
 		<res-ref-name>myh2</res-ref-name>
 		<res-type>javax.sql.DataSource</res-type>
 		<res-auth>Container</res-auth>
+	</resource-ref>
+
+	<resource-ref>
+		<res-ref-name>tm/TimerManager</res-ref-name>
+		<res-type>commonj.timers.TimerManager</res-type>
+		<res-auth>Container</res-auth>
+		<res-sharing-scope>Unshareable</res-sharing-scope>
 	</resource-ref>
 
 </web-app>

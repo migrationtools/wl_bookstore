@@ -1,4 +1,4 @@
-package net.codejava.javaee.bookstore;
+package bookstore;
 
 import javax.naming.Context;
 import javax.naming.InitialContext;

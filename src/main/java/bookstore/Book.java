@@ -1,4 +1,4 @@
-package net.codejava.javaee.bookstore;
+package bookstore;
 
 public class Book {
 	protected int id;

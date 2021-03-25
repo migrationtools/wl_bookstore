@@ -6,4 +6,12 @@
     <verbose>true</verbose>
   </jsp-descriptor>
   <context-root>bookstore</context-root>
+
+  <security-role-assignment>
+    <role-name>PayrollAdmin</role-name>
+    <principal-name>Tanya</principal-name>
+    <principal-name>Fred</principal-name>
+    <principal-name>system</principal-name>
+  </security-role-assignment>
+
 </weblogic-web-app>

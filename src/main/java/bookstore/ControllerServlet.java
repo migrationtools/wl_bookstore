@@ -1,4 +1,4 @@
-package net.codejava.javaee.bookstore;
+package bookstore;
 
 import java.io.IOException;
 import java.sql.SQLException;
